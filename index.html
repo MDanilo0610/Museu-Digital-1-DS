@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu digital</title>
+    <link rel="stylesheet" href="Museu digital.css">
+</head>
+<body>
+
+<div class="botoesInicio show">
+<div id="Subir">Subir</div>
+<div id="Descer">Descer</div>
+</div>
+
+<div class="pagina show" id="paginaInicial">
+
+    <!--Página introdução-->
+    <div id="introdução">
+    <div><img src="imagens/IMG-20250205-WA0033.jpg" alt="" class="imagemSala"></div>
+        <div class="textoETitulo">
+        <h1 style="padding: 5vh; font-size: 2rem;">BEM VINDO(A) AO MUSEU DIGITAL DE 1°DS!</h1>
+        
+        <div class="texto-explicativo">
+
+            <p>
+                Neste site estão todas as obras de arte feitas durante o primeiro e segundo bimestre pela turma do 1º ano de Desenvolvimento de Sistemas no período da manhã, orientados pela professora Maria Eduarda de Artes. Aqui mostraremos os 5 temas feitos pela sala, os desenhos sobre eles e seus autores em galerias diferentes.
+            </p>
+            <p>
+                Para acessá-las, basta clicar em suas respectivas portas com o seu cursor, e para navegar nelas você pode tanto clicar nos botões de Avançar e Voltar, ou pressionar os botões para esquerda e direita. E para voltar ao menu clique em "Menu" ou pressione a seta para baixo.
+            </p>
+
+        </div>
+        </div>
+    </div>
+    <!--Fim página introdução-->
+
+    <div id="portas">
+        <div class="container2">
+            <div class="porta" onclick="mostrar('Indígena')"><p>Indígena</p><img src="imagens/porta.png" alt=""></div>
+            <div class="porta" onclick="mostrar('Brasileira')"><p>Brasileira</p><img src="imagens/porta.png" alt=""></div>
+            <div class="porta" onclick="mostrar('Autoretrato')"><p>Autoretrato</p><img src="imagens/porta.png" alt=""></div>
+            <div class="porta" onclick="mostrar('Musica')"><p>Música</p><img src="imagens/porta.png" alt=""></div>
+            <div class="porta" onclick="mostrar('Odisseia')"><p>Odisseia</p><img src="imagens/porta.png" alt=""></div>
+        </div>
+    </div>
+
+    <!--Créditos-->
+    <div id="containerCreditos">
+   
+    <h1 style="position: absolute; top: 5vh;">Créditos</h1>
+
+    <div class="imagemCreditos A">
+      <img src="imagens/Marcos.jpg" alt="Marcos Danilo" class="foto-autor A">
+      <div><h1>Marcos Danilo</h1></div>
+      <div>
+        <li>Protótipo</li>
+        <li>Design</li>
+        <li>Estrutura</li>
+        <li>Funcionalidade</li>
+      </div>
+    </div>
+
+    
+    <div class="imagemCreditos B">
+      <img src="imagens/Rafa.jpg" alt="Rafael Araújo" class="foto-autor B">
+      <div><h1>Rafael Araújo</h1></div>
+      <div>
+        <li>Design</li>
+        <li>Estrutura</li>
+      </div>
+    </div>
+
+    
+    <div class="imagemCreditos C">
+      <img src="imagens/bia.jpg" alt="Beatriz Camargo" class="foto-autor C">
+      <div><h1>Beatriz Camargo</h1></div>
+      <div>
+        <li>Doc. Requisitos</li>
+        <li>Design</li>
+      </div>
+    </div>
+
+    </div>
+    <!--Fim créditos-->
+</div>
+
+    <div class="pagina" id="Indígena"><!--Começo página Indígena-->
+    <div class="temaTrabalho" style="left: 41.5vw;">Cultura Indígena</div>
+    <div class="container" id="fileira">
+
+        <div class="quadrosDescrição">
+            <div class="imagem A"><img src="Galeria/BeatrizCamargo-Indigena.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Beatriz Camargo</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem A"><img src="Galeria/BeatrizFrederico-Indigena.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Beatriz Frederico</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem A"><img src="Galeria/CaioHenrique-Indigena.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Caio Henrique</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem A"><img src="Galeria/DaviCamacho-Indigena.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Davi Camacho</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem A"><img src="Galeria/DaviMartins-Indigena.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Davi Martins</div>
+        </div>
+        
+        <div class="quadrosDescrição">
+            <div class="imagem A"><img src="Galeria/DerekCardoso-Indigena.jpg  " alt="">
+            </div>
+            <div>Feito por: <br>Dereck Cardoso</div>
+        </div> 
+
+        <div class="quadrosDescrição">
+            <div class="imagem A"><img src="Galeria/GabrielleRodrigues-Indigena.jpg" alt="">
+            </div>
+            <div>Feito por: <br> Gabrielle Rodrigues</div>
+        </div>
+
+
+        <div class="quadrosDescrição">
+            <div class="imagem A"><img src="Galeria/HeitorSilva-Indigena.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Heitor</div>
+        </div>  
+
+        <div class="quadrosDescrição">
+            <div class="imagem A"><img src="Galeria/JulioCesar-Indigena.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Julio Cesar</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem A"><img src="Galeria/MatheusNatale-Indigena.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Matheus Natale</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem A"><img src="Galeria/PedroBacelar-Indigena.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Pedro Bacelar</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem A"><img src="Galeria/RafaelAraujo-Indigena.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Rafael Araujo</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem A"><img src="Galeria/Ruan-Indigena.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Ruan</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem A"><img src="Galeria/Stefany-Indigena.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Stefany</div>
+        </div>
+    </div>
+
+    </div><!--Fim página Indígena-->
+
+    <div class="pagina" id="Brasileira"><!--Começo página Brasileira-->
+    <div class="temaTrabalho" style="left: 40.5vw;">Cultura Brasileira</div>
+    <div class="container" id="fileira">
+
+        <div class="quadrosDescrição">
+            <div class="imagem B"><img src="Galeria/Andre-Brasileira.jpg" alt="">
+            </div>
+            <div>Feito por: <br>André Luiz</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem B"><img src="Galeria/BeatrizFrederico-Brasileira.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Beatriz Frederico</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem B"><img src="Galeria/CaioRamos-Brasileira.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Caio Ramos</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem B"><img src="Galeria/DaviValente-Brasileira.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Davi Valente</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem B"><img src="Galeria/DerekCardoso-Brasileira.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Dere Cardoso</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem B"><img src="Galeria/GustavoS-Brasileira.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Gustavo S.</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem B"><img src="Galeria/MarcosDanilo-Brasileira.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Marcos Danilo</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem B"><img src="Galeria/MatheusLeonato-Brasileira.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Matheus Leonato</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem B"><img src="Galeria/PedroSales-Brasileira.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Pedro Sales</div>
+        </div>
+
+    </div>
+    </div><!--Fim página Brasileira-->
+
+    <div class="pagina" id="Autoretrato"><!--Começo página Autoretrato-->
+    <div class="temaTrabalho" style="left: 45vw;">Autoretrato</div>
+    <div class="container" id="fileira">
+
+        <div class="quadrosDescrição">
+            <div class="imagem C"><img src="Galeria/BeatrizCamargo-Autoretrato.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Beatriz Camargo</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem C"><img src="Galeria/BeatrizFrederico-Autoretrato.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Beatriz Frederico</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem C"><img src="Galeria/CaioRamos-Autoretrato.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Caio Ramos</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem C"><img src="Galeria/DaviMartins-Autoretrato.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Davi Martins</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem C"><img src="Galeria/DaviValente-Autoretrato.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Davi Valente</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem C"><img src="Galeria/GustavoS-Autoretrato.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Gustavo S.</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem C"><img src="Galeria/LuisHenrique-Autoretrato.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Luis Henrique</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem C"><img src="Galeria/MarcosDanilo-Autoretrato.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Marcos Danilo</div>
+        </div>
+        
+        <div class="quadrosDescrição">
+            <div class="imagem C"><img src="Galeria/PedroBacelar-Autoretrato.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Pedro Bacelar</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem C"><img src="Galeria/PedroSales-Autoretrato.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Pedro Sales</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem C"><img src="Galeria/RenanAlmeida-Autoretrato.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Renan Almeida</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem C"><img src="Galeria/Ruan-Autoretrato.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Ruan</div>
+        </div>
+
+    </div>
+    </div><!--Fim página Autoretrato-->
+
+    <div class="pagina" id="Musica"><!--Começo página Musica-->
+    <div class="temaTrabalho">Música</div>
+    <div class="container" id="fileira">
+
+        <div class="quadrosDescrição">
+            <div class="imagem D"><img src="Galeria/DaviCamacho-Musica.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Davi Camacho</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem D"><img src="Galeria/GabrielHenrique-Musica.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Gabriel Henrique</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem D"><img src="Galeria/Henrique-Música.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Henrique Rodrigues</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem D"><img src="Galeria/MatheusLeonato-Musica.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Matheus Leonato</div>
+        </div>
+
+    </div>
+    </div><!--Fim página Musica-->
+
+    <div class="pagina" id="Odisseia"><!--Começo página Odisseia-->
+    <div class="temaTrabalho" style="left: 46vw;">Odisseia</div>
+    <div class="container" id="fileira">
+
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/AndreLuiz-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>André Luiz</div>
+        </div>
+
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/BeatrizCamargo-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Beatriz Camargo</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/BeatrizFrederico-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Beatriz Frederico</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/CaioHenrique-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Caio Henrique</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/CauaGalvao-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Cauã Galvão</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/DanielGois-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Daniel Góis</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/DaviCamacho-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Davi Camacho</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/DaviValente-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Davi Valente</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/DerekCardoso-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Derek Cardoso</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/FelippeDemary-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Felippe Demary</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/GabrielleRodrigues-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Gabrielle Rodrigues</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/GustavoS-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Gustavo S.</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/HeitorSilva-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Heitor Silva</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/Igor-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Igor</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/JoaoVitor-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>João Vitor</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/JulioCesar-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Julio Cesar</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/MarcusVinicius-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Marcus Vinicius</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/MatheusLeonato-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Matheus Leonato</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/MatheusNatale-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Matheus Natale</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/PedroSales-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Pedro Sales</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/RafaelAraujo-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Rafael Araújo</div>
+        </div>
+        <div class="quadrosDescrição">
+            <div class="imagem E"><img src="Galeria/Stefany-Odisseia.jpg" alt="">
+            </div>
+            <div>Feito por: <br>Stefany</div>
+        </div>
+        
+    </div>
+    </div><!--Fim página Odisseia-->
+
+    <div class="controles">
+        <button class="botão" id="voltar">Voltar</button>
+        <button class="botão" id="voltarMenu" onclick="mostrar('paginaInicial')">Menu</a></button>
+        <button class="botão" id="avançar">Avançar</button>
+    </div>
+
+</body>
+<script src="Museu digital.js"></script>
+</html>

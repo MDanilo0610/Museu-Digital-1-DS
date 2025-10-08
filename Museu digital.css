@@ -1,0 +1,254 @@
+:root{
+--cor-do-fundo: #dedede;
+--cor-texto: #111;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: var(--cor-do-fundo);
+    color: var(--cor-texto);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+/*Menu principal*/
+
+.botoesInicio{
+    display: none;
+}
+
+.botoesInicio.show{
+    display: block;
+}
+
+#Subir{
+    position: fixed;
+    bottom: 4vh;
+    left: 3vw;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#Descer{
+    position: fixed;
+    bottom: 4vh;
+    right: 3vw;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#paginaInicial{
+    display: none;
+    flex-direction: column;
+    transition: transform 1s ease-out;
+}
+
+#paginaInicial.show{
+    display: flex;
+    flex-direction: column;
+}
+
+ #introdução{
+    position: relative;
+    display: block;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--cor-do-fundo);
+    height: 100vh;
+    width: 100vw;
+}
+
+p{
+    margin-bottom: 7vh;
+    margin-top: -2vh;
+}
+
+.texto-explicativo{
+    margin-top: 10vh;
+    padding: 3vw;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0 auto;
+
+}
+
+.textoETitulo{
+    position: relative;
+    height: 80vh;
+    margin-top: 40vh;
+    z-index: 1;
+    background-color: var(--cor-do-fundo);
+}
+
+
+.imagemSala {
+  margin-top: -45vh;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  opacity: 1;
+}
+
+#portas{
+    margin-top: 300vh;
+}
+
+.container2{
+    display: flex;
+    height: 96vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.porta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.porta p{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.porta img{
+    height: 50vh;
+}
+
+ #containerCreditos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 400vh;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+ }
+
+.imagemCreditos{
+    margin-top: 25vh;
+}
+
+    .foto-autor {
+      height: 40vh;
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .foto-autor.A:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px blue;
+    }
+
+    .foto-autor.B:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px yellow;
+    }
+
+    .foto-autor.C:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px red;
+    }
+/*Galeria de desenhos*/
+.temaTrabalho{
+    position: absolute;
+    left: 46.5vw;
+    top: 7vh;
+    font-size: 5vh;
+    color: var(--cor-texto);
+}
+
+.container{
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100vh;
+    align-items: center;
+}
+
+.imagem.A , .imagem.B , .imagem.C , .imagem.D , .imagem.E{
+    margin: 0 15vw;
+    border: 40px solid transparent;
+    border-image-source: url('imagens/quadro2.png');
+    border-image-slice: 40;
+    border-image-repeat: repeat;
+}
+
+img {
+    height: 40vh;
+    display: block;
+}
+
+.quadrosDescrição{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-texto);
+    gap: 3vh;
+}
+
+.botão {
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+#avançar{
+    right: 1vw;
+}
+
+#voltarMenu{
+    left: 46.5vw;
+}
+
+#voltar{
+    left: 1vw;
+}
+
+/*Mostrar página*/
+.pagina{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+#Indígena.pagina.show, #Brasileira.pagina.show,  #Autoretrato.pagina.show, #Musica.pagina.show, #Odisseia.pagina.show {
+    display: flex;
+    animation: zoomIn 0.5s ease;
+}
+
+.controles{
+    display: none;
+}
+
+.controles.show {
+    display: flex;
+    animation: zoomIn 0.5s ease;
+}
+
+@keyframes zoomIn{
+    0%{
+        opacity: 0.1;
+        scale: 0.5;
+    }
+    
+
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
